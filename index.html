@@ -4,17 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Biglietto treno</title>
 </head>
-<body>
-    <div class="form-container">
-        <label for="user-km">Km da percorrere:</label><br>
-        <input type="text" id="user-km" name="user-km"><br>
 
-        <label for="user-age">Fascia d'età:</label><br>
-        <input type="text" id="user-age" name="user-age"><br>
+<body class="flex">
+    <!-- <div class="form-container flex">
+        <div class="name-info-cont">
+            <label for="user-name">Nome e Cognome:</label><br>
+            <input type="text" id="user-name name="user-name"><br>
+        </div>
+
+        <div class="km-info-container">
+            <label for="user-km">Km da percorrere:</label><br>
+            <input type="text" id="user-km" name="user-km"><br>
+        </div>
+
+        <div class="age-info-container">
+            <label for="user-age">Scegli una fascia d'età:</label>
+            <select id="user-age" name="user-age">
+                <option value="underage">Minorenne (0-17)</option>
+                <option value="adult">Maggiorenne (18+)</option>
+                <option value="elder">Anziano (65+)</option>
+            </select>
+        </div>
+        <div class="inputs">
+            <input type="button">
+            <input type="button">
+        </div>
+    </div> -->
+    <div class="ticket-gen-container flex">
+            <div class="name-info-container info-containers flex">
+                <label class="labels" for="user-name">Nome e Cognome:</label>
+                <input type="text" id="user-name" name="user-name">
+            </div>
+    
+            <div class="km-info-container info-containers flex ">
+                <label class="labels" for="user-km">Km da percorrere:</label>
+                <input type="text" id="user-km" name="user-km">
+            </div>
+    
+            <div class="age-info-container info-containers flex">
+                <label class="labels" for="user-age">Scegli una fascia d'età:</label>
+                <select id="user-age" name="user-age">
+                    <option value="underage">Minorenne (0-17)</option>
+                    <option value="adult">Maggiorenne (18+)</option>
+                    <option value="elder">Anziano (65+)</option>
+                </select>
+            </div>
+
+            <div class="buttons-container flex">
+                <input id="generate-btn" class="buttons" type="button" value="Genera">
+                <input id="cancel-btn" class="buttons" type="button" value="Annulla">
+            </div>
     </div>
+
+    <div class="ticket-container flex">
+        <h1>PRICE YOUR TICKET</h1>
+        <h2>WELCOME</h2>
+
+        <div class="rate-div">
+            <i class="fa-solid fa-triangle-exclamation"></i><span>Rate price is 0.21€/Km</span><i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+
+        <div>
+            <h5>Km to travel: <span id="user-km-stamp"></span></h5>
+            <h5>Age: <span id="user-age-stamp"></span></h5>
+        </div>
+
+        <div class="priceString-container">
+            <h3>The price for your ticket amounts to: <span id="user-price"></span>€</h3>
+        </div>
+        <script src="js/script.js"></script>
+    </div>
+
     <script src="JS/script.js"></script>
 </body>
 </html>
