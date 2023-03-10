@@ -50,9 +50,9 @@
             <div class="age-info-container info-containers flex">
                 <label class="labels" for="user-age">Scegli una fascia d'età:</label>
                 <select id="user-age" name="user-age">
-                    <option value="underage">Minorenne (0-17)</option>
-                    <option value="adult">Maggiorenne (18+)</option>
-                    <option value="elder">Anziano (65+)</option>
+                    <option value="Minorenne">Minorenne (0-17)</option>
+                    <option value="Adulto">Maggiorenne (18+)</option>
+                    <option value="Anziano">Anziano (65+)</option>
                 </select>
             </div>
 
@@ -63,20 +63,20 @@
     </div>
 
     <div class="ticket-container flex">
-        <h1>PRICE YOUR TICKET</h1>
-        <h2>WELCOME</h2>
+        <h1>YOUR TICKET</h1>
 
         <div class="rate-div">
             <i class="fa-solid fa-triangle-exclamation"></i><span>Rate price is 0.21€/Km</span><i class="fa-solid fa-triangle-exclamation"></i>
         </div>
 
         <div>
-            <h5>Km to travel: <span id="user-km-stamp"></span></h5>
-            <h5>Age: <span id="user-age-stamp"></span></h5>
+            <h5>Nominativo: <span class="stamp-color" id="user-name-stamp"></span></h5>
+            <h5>Km da percorrere: <span class="stamp-color" id="user-km-stamp"></span></h5>
+            <h5>Fascia d'età: <span class="stamp-color" id="user-age-stamp"></span></h5>
         </div>
 
         <div class="priceString-container">
-            <h3>The price for your ticket amounts to: <span id="user-price"></span>€</h3>
+            <h3>Il prezzo del biglietto ammonta a: <span id="user-price"></span>€</h3>
         </div>
         <script src="js/script.js"></script>
     </div>

@@ -16,17 +16,22 @@
 // LOGICA
 const userKm = document.getElementById("user-km").value;
 const userAge = document.getElementById("user-age").value;
-const generateBtn = document.getElementById("generate-btn");
+
 const pricePerKm = 0.21;
 
 let kmRate = userKm * 0.21;
 console.log(kmRate);
 
+const generateBtn = document.getElementById("generate-btn");
 generateBtn.addEventListener("click", function() {
+    const userName = document.getElementById("user-name").value;
+    document.getElementById("user-name-stamp").innerHTML = userName;
     const userKm = document.getElementById("user-km").value;
     document.getElementById("user-km-stamp").innerHTML = userKm;
     const userAge = document.getElementById("user-age");
     document.getElementById("user-age-stamp").value = userAge.options[userAge.selectedIndex].text;
+    document.getElementById("user-age-stamp").innerHTML = userAge.value;
+    console.log(userAge.value);
 });
 
 // OUTPUT

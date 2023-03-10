@@ -18,7 +18,7 @@ body{
 }
 
 .ticket-gen-container{
-    height: 20vh;
+    height: 22vh;
     width: 55rem;
     flex-direction: column;
     text-align: center;
@@ -42,6 +42,10 @@ body{
     border: 2px dotted black;
     background-color: #b4c9de;
     color: black;
+}
+
+.stamp-color{
+    color: red;
 }
 
 .labels{
